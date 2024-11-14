@@ -23,8 +23,19 @@ public class programa8 {
 				System.out.println("ingrese "+(i+1)+":");
 				num[i]=sc.nextInt();
 				if((i+1)==num.length) {
-					Arrays.sort(num);
-					System.out.println(num[num.length-1]);
+					if(num[0]>num[1]) {
+						if(num[0]>num[2]) {
+							System.out.println(num[0]);
+						}
+					}else if(num[1]>num[0]) {
+						if(num[1]>num[2]) {
+							System.out.println(num[2]);
+					}else if(num[2]>num[0]) {
+						if(num[2]>num[1]) {
+							System.out.println(num[2]);
+					}
+					/*Arrays.sort(num);
+					System.out.println(num[num.length-1]);*/
 				}
 			}
 		} catch(InputMismatchException e) {
