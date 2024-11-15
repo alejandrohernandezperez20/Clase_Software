@@ -1,6 +1,5 @@
 package programas;
 
-import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -26,19 +25,29 @@ public class programa8 {
 					if(num[0]>num[1]) {
 						if(num[0]>num[2]) {
 							System.out.println(num[0]);
+						}else {
+							System.out.println(num[2]);
 						}
 					}else if(num[1]>num[0]) {
 						if(num[1]>num[2]) {
+							System.out.println(num[1]);
+						}
+						else {
 							System.out.println(num[2]);
+						}
 					}else if(num[2]>num[0]) {
 						if(num[2]>num[1]) {
 							System.out.println(num[2]);
+						}
+						else {
+							System.out.println(num[1]);
+						}
 					}
 					/*Arrays.sort(num);
 					System.out.println(num[num.length-1]);*/
 				}
 			}
-		} catch(InputMismatchException e) {
+		}catch(InputMismatchException e) {
 			// TODO: handle exception
 			System.out.println("ERROR TIENES QUE PONER EN NUMEROS");
 		}
